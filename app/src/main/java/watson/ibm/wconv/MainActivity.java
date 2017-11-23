@@ -6,7 +6,6 @@ import android.os.Bundle;
 
 import android.support.v7.widget.RecyclerView;
 import com.ibm.watson.developer_cloud.conversation.v1.Conversation;
-//import com.ibm.watson.developer_cloud.conversation.v1.model.Context;
 import com.ibm.watson.developer_cloud.conversation.v1.model.InputData;
 import com.ibm.watson.developer_cloud.conversation.v1.model.MessageOptions;
 import com.ibm.watson.developer_cloud.conversation.v1.model.MessageResponse;
@@ -21,10 +20,10 @@ public class MainActivity extends AppCompatActivity {
     //VARIABLE DECLARATION
     private Conversation service;
     private MessageResponse response = null;
-    private String conversation_version="2017-05-26";
-    private String username="eb0f0d8f-ff2c-4a10-b9c5-991da2b22a89";
-    private String password="EI1tsAqmlecX";
-    private String workspace = "9f0a85ae-7365-4b49-95d0-114cd2dcfdd7";
+    private String conversation_version="VERSION";
+    private String username="USERNAME";
+    private String password="PASSWORD";
+    private String workspace = "WORKSPACE";
     private RecyclerView recyclerview;
     private List<String[]> msg=new ArrayList<String[]>();
     private Adapter adapter;
